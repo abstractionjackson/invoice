@@ -47,6 +47,6 @@ invoice_template = env.get_template("invoice.html")
 rendered_invoice = invoice_template.render(invoice_data=invoice_data)
 
 # Save the rendered invoice to a file
-with open("invoice.html", "w") as invoice_file:
+with open("public/invoice.html", "w") as invoice_file:
     invoice_file.write(rendered_invoice)
     print("Invoice has been generated and saved as invoice.html")
