@@ -1,0 +1,42 @@
+body {
+  width: 8.5in;
+  margin: 0.5in;
+  display: grid;
+}
+
+body > header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
+}
+
+body > header > .letterhead {
+  grid-column: 1 / 2;
+}
+
+.letterhead > h1 {
+  margin: 0;
+}
+
+body > header > .date#invoice_date {
+  grid-column: 2 / 3;
+  text-align: right;
+}
+
+body > main #parties {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#parties > article {
+  margin: 0 1rem;
+}
+
+#parties > #issuer {
+  grid-column: 1 / 2;
+  text-align: right;
+}
+
+#parties > #audience {
+  grid-column: 2 / 3;
+}

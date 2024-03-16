@@ -1,0 +1,63 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invoice</title>
+    <link rel="stylesheet" href="public/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="letterhead">
+        <h1>XYZ Construction Services, LLC</h1>
+      </div>
+      <div class="date" id="invoice_date">
+        
+        Mar, 15, 2024
+      </div>
+    </header>
+    <main>
+      <section id="parties">
+        <article id="issuer">
+          <header><h2><span class="iss name">XYZ Construction Services, LLC</span></h2></header>
+          <main>
+            <div class="iss addr">
+              <!-- for each item in iss.addr, render a span with the item's value -->
+              
+                <span>1234 Construction Lane</span>
+              
+                <span>Suite 100</span>
+              
+            </div>
+            <div class="iss loc">
+              <span class="iss city">Planotopia</span><span class="punctuation comma">,</span><span class="punctuation space"> </span><span class="iss state">EX</span>
+            </div>
+            <div class="iss zip">12345</div>
+          </main>
+        </article>
+        <article id="audience">
+          <header><h2 class="aud name">John Doe</h2></header>
+          <main>
+            <div class="aud addr">
+              <!-- for each item in aud.addr, render a span with the item's value -->
+              
+                <span>7890 Living St</span>
+              
+                <span>#101</span>
+              
+            </div>
+            <div class="aud loc">
+              <span class="aud city">Homeville</span><span class="punctuation comma">,</span><span class="punctuation space"> </span><span class="aud state">EX</span>
+            </div>
+            <div class="aud zip">67890</div>
+          </main>
+        </article>
+      </section>
+      <section id="subject"></section>
+    </main>
+  </body>
+</html>
